@@ -183,7 +183,7 @@ gulp.task('build-doc', (cb) => {
 });
 
 
-/// 
+///
 /// ------------------ ENVIRONMENTS ------------------
 ///
 gulp.task('launch-env', () => {
@@ -226,10 +226,10 @@ gulp.task('watch', () => {
 /// ------------------ TASKS ------------------
 ///
 
-gulp.task('default', ['stylesheet', 'html', 'javascript', 'watch']);
-gulp.task('serve', ['stylesheet', 'html', 'javascript', 'launch-env']);
-gulp.task('build', ['stylesheet', 'html', 'javascript']);
 
+gulp.task('default', ['stylesheet', 'html', 'javascript', 'watch', 'axe-html']);
+gulp.task('serve', ['stylesheet', 'html', 'javascript', 'launch-env','axe-html']);
+gulp.task('build', ['stylesheet', 'html', 'javascript']);
 
 
 
